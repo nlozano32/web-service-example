@@ -119,7 +119,7 @@
             </output>
         </operation>
         <operation name="consultarEstadoTramiteUAECDPru">
-            <soap:operation soapAction="http://vista.siic.uaecd.gov.co//consultarEstadoTramiteUAECDPru"/>
+            <soap:operation soapAction=""/>
             <input>
                 <soap:body use="literal"/>
             </input>
@@ -130,7 +130,7 @@
     </binding>
     <service name="WSEstadoTramiteUAECD">
         <port name="WSEstadoTramiteUAECDSoapHttpPort" binding="tns:WSEstadoTramiteUAECDSoapHttp">
-            <soap:address location="http://10.35.98.217:8888/EstadoTramiteUAECD-WSEstadoTramiteUAECD-context-root/WSEstadoTramiteUAECDSoapHttpPort"/>
+            <soap:address location=""/>
         </port>
     </service>
 </definitions>
