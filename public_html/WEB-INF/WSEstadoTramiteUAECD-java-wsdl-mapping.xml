@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-wsdl-mapping xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+  http://www.ibm.com/webservices/xsd/j2ee_jaxrpc_mapping_1_1.xsd"
+  version="1.1">
+
+    <package-mapping>
+        <package-type>co.gov.uaecd.siic.vista</package-type>
+        <namespaceURI>http://vista.siic.uaecd.gov.co/</namespaceURI>
+    </package-mapping>
+    <package-mapping>
+        <package-type>co.gov.uaecd.siic.vista</package-type>
+        <namespaceURI>http://vista.siic.uaecd.gov.co/types/</namespaceURI>
+    </package-mapping>
+    <java-xml-type-mapping>
+        <java-type>co.gov.uaecd.siic.vista.WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru_ResponseStruct</java-type>
+        <root-type-qname xmlns:typeNS="http://vista.siic.uaecd.gov.co/types/">typeNS:consultarEstadoTramiteUAECDPruResponse</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>result</java-variable-name>
+            <xml-element-name>result</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>co.gov.uaecd.siic.agendamiento.obj.EstadoTramiteUAECD</java-type>
+        <root-type-qname xmlns:typeNS="http://vista.siic.uaecd.gov.co/types/">typeNS:EstadoTramiteUAECD</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>observacion</java-variable-name>
+            <xml-element-name>observacion</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>descripcionTramite</java-variable-name>
+            <xml-element-name>descripcionTramite</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>anoRadicacion</java-variable-name>
+            <xml-element-name>anoRadicacion</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>fechaRadicacion</java-variable-name>
+            <xml-element-name>fechaRadicacion</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>actividadDescripcion</java-variable-name>
+            <xml-element-name>actividadDescripcion</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>descripcionDependencia</java-variable-name>
+            <xml-element-name>descripcionDependencia</xml-element-name>
+        </variable-mapping>
+        <variable-mapping>
+            <java-variable-name>numeroRadicacion</java-variable-name>
+            <xml-element-name>numeroRadicacion</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>co.gov.uaecd.siic.vista.WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD_ResponseStruct</java-type>
+        <root-type-qname xmlns:typeNS="http://vista.siic.uaecd.gov.co/types/">typeNS:consultarEstadoTramiteUAECDResponse</root-type-qname>
+        <qname-scope>complexType</qname-scope>
+        <variable-mapping>
+            <java-variable-name>result</java-variable-name>
+            <xml-element-name>result</xml-element-name>
+        </variable-mapping>
+    </java-xml-type-mapping>
+    <service-interface-mapping>
+        <service-interface>co.gov.uaecd.siic.vista.WSEstadoTramiteUAECD</service-interface>
+        <wsdl-service-name xmlns:serviceNS="http://vista.siic.uaecd.gov.co/">serviceNS:WSEstadoTramiteUAECD</wsdl-service-name>
+        <port-mapping>
+            <port-name>WSEstadoTramiteUAECDSoapHttpPort</port-name>
+            <java-port-name>WSEstadoTramiteUAECDSoapHttpPort</java-port-name>
+        </port-mapping>
+    </service-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>co.gov.uaecd.siic.vista.WSEstadoTramiteUAECD</service-endpoint-interface>
+        <wsdl-port-type xmlns:portTypeNS="http://vista.siic.uaecd.gov.co/">portTypeNS:WSEstadoTramiteUAECD</wsdl-port-type>
+        <wsdl-binding xmlns:bindingNS="http://vista.siic.uaecd.gov.co/">bindingNS:WSEstadoTramiteUAECDSoapHttp</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>consultarEstadoTramiteUAECD</java-method-name>
+            <wsdl-operation>consultarEstadoTramiteUAECD</wsdl-operation>
+            <wrapped-element />
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD</wsdl-message>
+                    <wsdl-message-part-name>String_1</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD</wsdl-message>
+                    <wsdl-message-part-name>String_2</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>2</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD</wsdl-message>
+                    <wsdl-message-part-name>String_3</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>3</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD</wsdl-message>
+                    <wsdl-message-part-name>String_4</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>4</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD</wsdl-message>
+                    <wsdl-message-part-name>String_5</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>5</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD</wsdl-message>
+                    <wsdl-message-part-name>String_6</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.util.List</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDResponse</wsdl-message>
+                <wsdl-message-part-name>result</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>consultarEstadoTramiteUAECDPru</java-method-name>
+            <wsdl-operation>consultarEstadoTramiteUAECDPru</wsdl-operation>
+            <wrapped-element />
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru</wsdl-message>
+                    <wsdl-message-part-name>fechaEntrada</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>1</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru</wsdl-message>
+                    <wsdl-message-part-name>fechaSalida</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>2</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru</wsdl-message>
+                    <wsdl-message-part-name>listaTramites</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>3</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru</wsdl-message>
+                    <wsdl-message-part-name>correousuario</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>4</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru</wsdl-message>
+                    <wsdl-message-part-name>pwd</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <method-param-parts-mapping>
+                <param-position>5</param-position>
+                <param-type>java.lang.String</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru</wsdl-message>
+                    <wsdl-message-part-name>ipRemoto</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>java.lang.String</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="http://vista.siic.uaecd.gov.co/">wsdlMsgNS:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPruResponse</wsdl-message>
+                <wsdl-message-part-name>result</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+</java-wsdl-mapping>
+

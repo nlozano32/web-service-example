@@ -1,0 +1,210 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebService xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webservice">
+   <list n="CHILD_NODES">
+      <url path="Facade.java"/>
+      <url path="WSEstadoTramiteUAECD.java"/>
+      <url path="../../../../../../public_html/WEB-INF/wsdl/WSEstadoTramiteUAECD.wsdl"/>
+      <url path="../../../../../../public_html/WEB-INF/WSEstadoTramiteUAECD-java-wsdl-mapping.xml"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="ATTACHMENT_MIME"/>
+      <list n="BD_">
+         <hash>
+            <value n="BOUND_PORT_TYPE" v="{USE_OWNER_TNS}WSEstadoTramiteUAECD"/>
+            <value n="DEFAULT_NAME" v="true"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+            <value n="NAME" v="{USE_OWNER_TNS}WSEstadoTramiteUAECDSoapHttp"/>
+            <list n="OP_BINDINGS">
+               <hash>
+                  <value n="BD_SOAP_ACTION" v=""/>
+                  <value n="BOUND_OPERATION" v="java.lang.String.consultarEstadoTramiteUAECDPru.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_SOAP_ACTION" v=""/>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;co.gov.uaecd.siic.agendamiento.obj.EstadoTramiteUAECD>.consultarEstadoTramiteUAECD.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+         </hash>
+      </list>
+      <value n="GUID" v="30931c88-012e-1000-800d-0a2362d9b22f"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaWebService"/>
+      <list n="PO_">
+         <hash>
+            <value n="DEFAULT_NAME" v="true"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+            <value n="NAME" v="WSEstadoTramiteUAECDSoapHttpPort"/>
+            <value n="PORT_BINDING_NAME" v="{USE_OWNER_TNS}WSEstadoTramiteUAECDSoapHttp"/>
+            <list n="PORT_OPS">
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.lang.String.consultarEstadoTramiteUAECDPru.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;co.gov.uaecd.siic.agendamiento.obj.EstadoTramiteUAECD>.consultarEstadoTramiteUAECD.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <url n="URL" protocol="http" host="subim14727" port="8888" path="/EstadoTramiteUAECD-WSEstadoTramiteUAECD-context-root/MyWebService1"/>
+         </hash>
+      </list>
+      <hash n="PROPERTY_GROUPS"/>
+      <list n="PT_">
+         <hash>
+            <value n="AUTO_SERVICE_INTERFACE" v="co.gov.uaecd.siic.vista.WSEstadoTramiteUAECD"/>
+            <value n="DEFAULT_NAME" v="true"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+            <value n="NAME" v="{USE_OWNER_TNS}WSEstadoTramiteUAECD"/>
+            <list n="OP_">
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <value n="OP_INPUT_MESSAGE" v="{USE_OWNER_TNS}WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru"/>
+                  <list n="OP_JAVA_EXCEPTIONS">
+                     <string v="java.lang.Exception"/>
+                     <string v="java.rmi.RemoteException"/>
+                  </list>
+                  <value n="OP_JAVA_NAME" v="consultarEstadoTramiteUAECDPru"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="fechaEntrada"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="fechaEntrada"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="fechaSalida"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="fechaSalida"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="listaTramites"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="listaTramites"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="correousuario"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="correousuario"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="pwd"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="pwd"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="ipRemoto"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="ipRemoto"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="java.lang.String"/>
+                  <value n="OP_NAME" v="consultarEstadoTramiteUAECDPru"/>
+                  <value n="OP_OUTPUT_MESSAGE" v="{USE_OWNER_TNS}WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPruResponse"/>
+                  <value n="OP_WSDL_RETURN_NAME" v="return"/>
+                  <value n="OP_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <value n="OP_INPUT_MESSAGE" v="{USE_OWNER_TNS}WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD"/>
+                  <list n="OP_JAVA_EXCEPTIONS">
+                     <string v="java.lang.Exception"/>
+                     <string v="java.rmi.RemoteException"/>
+                  </list>
+                  <value n="OP_JAVA_NAME" v="consultarEstadoTramiteUAECD"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="fechaEntrada"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="fechaEntrada"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="fechaSalida"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="fechaSalida"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="listaTramites"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="listaTramites"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="correousuario"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="correousuario"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="pwd"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="pwd"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="ipRemoto"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="ipRemoto"/>
+                        <value n="TARGET_NAMESPACE" v="USE_OWNER_TNS"/>
+                        <value n="TYPE" v="java.lang.String"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="java.util.List&lt;co.gov.uaecd.siic.agendamiento.obj.EstadoTramiteUAECD>"/>
+                  <value n="OP_NAME" v="consultarEstadoTramiteUAECD"/>
+                  <value n="OP_OUTPUT_MESSAGE" v="{USE_OWNER_TNS}WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDResponse"/>
+                  <value n="OP_WSDL_RETURN_NAME" v="return"/>
+                  <value n="OP_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <value n="PT_CLASS" v="co.gov.uaecd.siic.vista.Facade"/>
+         </hash>
+      </list>
+      <url n="TARGET_PROJECT" path="../../../../../../WSEstadoTramiteUAECD.jpr"/>
+      <list n="WS_DEPENDENT_VALUE_TYPES">
+         <string v="co.gov.uaecd.siic.agendamiento.obj.EstadoTramiteUAECD"/>
+      </list>
+      <url n="WS_MAPPING_FILE" path="../../../../../../public_html/WEB-INF/WSEstadoTramiteUAECD-java-wsdl-mapping.xml"/>
+      <value n="WS_TARGET_NAMESPACE" v="http://vista.siic.uaecd.gov.co/"/>
+      <value n="WS_TYPE_NAMESPACE" v="http://vista.siic.uaecd.gov.co/types/"/>
+      <value n="WS_URI" v="WSEstadoTramiteUAECD"/>
+   </hash>
+</jdevws:WebService>

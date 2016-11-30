@@ -1,0 +1,136 @@
+<definitions
+     name="WSEstadoTramiteUAECD"
+     targetNamespace="http://vista.siic.uaecd.gov.co/"
+     xmlns="http://schemas.xmlsoap.org/wsdl/"
+     xmlns:tns="http://vista.siic.uaecd.gov.co/"
+     xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+     xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+     xmlns:tns0="http://vista.siic.uaecd.gov.co/types/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:tns1="http://www.oracle.com/webservices/internal/literal"
+    >
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.oracle.com/webservices/internal/literal"
+             elementFormDefault="qualified" xmlns:tns="http://www.oracle.com/webservices/internal/literal"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:soap11-enc="http://schemas.xmlsoap.org/soap/encoding/">
+            <import namespace="http://vista.siic.uaecd.gov.co/types/"/>
+            <complexType name="list">
+                <complexContent>
+                    <extension base="tns:collection">
+                        <sequence/>
+                    </extension>
+                </complexContent>
+            </complexType>
+            <complexType name="collection">
+                <sequence>
+                    <element name="item" type="anyType" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+        </schema>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://vista.siic.uaecd.gov.co/types/"
+             elementFormDefault="qualified" xmlns:tns="http://vista.siic.uaecd.gov.co/types/"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:soap11-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.oracle.com/webservices/internal/literal">
+            <import namespace="http://www.oracle.com/webservices/internal/literal"/>
+            <complexType name="EstadoTramiteUAECD">
+                <sequence>
+                    <element name="observacion" type="string" nillable="true"/>
+                    <element name="descripcionTramite" type="string" nillable="true"/>
+                    <element name="anoRadicacion" type="int"/>
+                    <element name="fechaRadicacion" type="string" nillable="true"/>
+                    <element name="actividadDescripcion" type="string" nillable="true"/>
+                    <element name="descripcionDependencia" type="string" nillable="true"/>
+                    <element name="numeroRadicacion" type="long"/>
+                </sequence>
+            </complexType>
+            <element name="consultarEstadoTramiteUAECDElement">
+                <complexType>
+                    <sequence>
+                        <element name="fechaEntrada" type="string" nillable="true"/>
+                        <element name="fechaSalida" type="string" nillable="true"/>
+                        <element name="listaTramites" type="string" nillable="true"/>
+                        <element name="correousuario" type="string" nillable="true"/>
+                        <element name="pwd" type="string" nillable="true"/>
+                        <element name="ipRemoto" type="string" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="consultarEstadoTramiteUAECDResponseElement">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="ns1:list" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="consultarEstadoTramiteUAECDPruElement">
+                <complexType>
+                    <sequence>
+                        <element name="fechaEntrada" type="string" nillable="true"/>
+                        <element name="fechaSalida" type="string" nillable="true"/>
+                        <element name="listaTramites" type="string" nillable="true"/>
+                        <element name="correousuario" type="string" nillable="true"/>
+                        <element name="pwd" type="string" nillable="true"/>
+                        <element name="ipRemoto" type="string" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="consultarEstadoTramiteUAECDPruResponseElement">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="string" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </schema>
+    </types>
+    <message name="WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD">
+        <part name="parameters" element="tns0:consultarEstadoTramiteUAECDElement"/>
+    </message>
+    <message name="WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDResponse">
+        <part name="parameters" element="tns0:consultarEstadoTramiteUAECDResponseElement"/>
+    </message>
+    <message name="WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru">
+        <part name="parameters" element="tns0:consultarEstadoTramiteUAECDPruElement"/>
+    </message>
+    <message name="WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPruResponse">
+        <part name="parameters" element="tns0:consultarEstadoTramiteUAECDPruResponseElement"/>
+    </message>
+    <portType name="WSEstadoTramiteUAECD">
+        <operation name="consultarEstadoTramiteUAECD">
+            <input message="tns:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECD"/>
+            <output message="tns:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDResponse"/>
+        </operation>
+        <operation name="consultarEstadoTramiteUAECDPru">
+            <input message="tns:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPru"/>
+            <output message="tns:WSEstadoTramiteUAECD_consultarEstadoTramiteUAECDPruResponse"/>
+        </operation>
+    </portType>
+    <binding name="WSEstadoTramiteUAECDSoapHttp" type="tns:WSEstadoTramiteUAECD">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="consultarEstadoTramiteUAECD">
+            <soap:operation soapAction="http://vista.siic.uaecd.gov.co//consultarEstadoTramiteUAECD"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="consultarEstadoTramiteUAECDPru">
+            <soap:operation soapAction="http://vista.siic.uaecd.gov.co//consultarEstadoTramiteUAECDPru"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="WSEstadoTramiteUAECD">
+        <port name="WSEstadoTramiteUAECDSoapHttpPort" binding="tns:WSEstadoTramiteUAECDSoapHttp">
+            <soap:address location="http://10.35.98.217:8888/EstadoTramiteUAECD-WSEstadoTramiteUAECD-context-root/WSEstadoTramiteUAECDSoapHttpPort"/>
+        </port>
+    </service>
+</definitions>

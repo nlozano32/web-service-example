@@ -1,0 +1,10 @@
+<oracle-webservices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/oracle-webservices-10_0.xsd">
+    <webservice-description name="WSEstadoTramiteUAECD">
+        <port-component name="WSEstadoTramiteUAECDSoapHttpPort">
+            <operations>
+                <operation name="consultarEstadoTramiteUAECD" input="{http://vista.siic.uaecd.gov.co/types/}consultarEstadoTramiteUAECDElement"/>
+                <operation name="consultarEstadoTramiteUAECDPru" input="{http://vista.siic.uaecd.gov.co/types/}consultarEstadoTramiteUAECDPruElement"/>
+            </operations>
+        </port-component>
+    </webservice-description>
+</oracle-webservices>
